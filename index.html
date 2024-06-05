@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Game of Thrones</title>
+    <h1><u>Houses of the Seven Kingdoms</u></h1>
+    <style>
+        h1{
+            text-align: center;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: gold;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+        }
+        #buttons{
+            text-align: center;
+        }
+        #demo{
+            font-size: 45px;
+            text-align: center;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+        }
+        #Houses{
+            display: block;  
+            margin-left: auto;  
+            margin-right: auto; 
+            padding: 5px; 
+        }
+        #description{
+            text-align: center;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 20px;
+            -webkit-text-stroke-color:black;
+            background-color: darkslateblue;
+        }
+        body{
+            background-image: url(images/Wallpaper.png);
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function Stark(){
+            document.body.style.backgroundImage = "url('images/HouseStarkCastle.jpeg')";
+            document.getElementById("Houses").src="images/HouseStarkSigil.png"
+            document.getElementById("demo").innerHTML = "STARK";
+            document.getElementById("demo").style.color = "grey";
+            document.getElementById("description").innerHTML = "The Starks are an ancient house of First Men descent. House Stark was founded by Brandon the Builder, a legendary figure who lived during the Age of Heroes. Bran the Builder is said to have raised Winterfell, the seat of the Starks, and the Wall, and other legends connect him with Storm's End and the Hightower."
+            document.getElementById("description").style.color = "darkslategray";
+            document.getElementById("description").style.backgroundColor = "linen";
+        }
+        function Lannister(){
+            document.body.style.backgroundImage = "url('images/HouseLannisterCastle.jpeg')";
+            document.getElementById("Houses").src="images/HouseLannisterSigil.png";
+            document.getElementById("demo").innerHTML = "LANNISTER";
+            document.getElementById("demo").style.color = "gold";
+            document.getElementById("description").innerHTML = "House Lannister of Casterly Rock is one of the Great Houses of Westeros, one of its richest and most powerful families and one of its oldest dynasties. ... Their seat is Casterly Rock, a massive rocky promontory overlooking the Sunset Sea which has had habitations and fortifications built into it over the millennia."
+            document.getElementById("description").style.color = "gold";
+            document.getElementById("description").style.backgroundColor = "darkred";
+        }
+        function Baratheon(){
+            document.body.style.backgroundImage = "url('images/HouseBaratheonCastle.png')";
+            document.getElementById("Houses").src="images/HouseBaratheonSigil.png";
+            document.getElementById("demo").innerHTML = "BARATHEON";
+            document.getElementById("demo").style.color = "black";
+            document.getElementById("description").innerHTML = "House Baratheon of Storm's End is one of the Great Houses of Westeros, and is the principal house in the stormlands, which they rule as Lords Paramount of the Stormlands. Their seat, Storm's End, is an ancient castle raised by the Storm Kings from the now-extinct House Durrandon."
+            document.getElementById("description").style.color = "black";
+            document.getElementById("description").style.backgroundColor = "yellow";
+        }
+        function Targaryen(){
+            document.body.style.backgroundImage = "url('images/HouseTargaryenCastle.jpg')";
+            document.getElementById("Houses").src="images/HouseTargaryenSigil.png";
+            document.getElementById("demo").innerHTML = "TARGARYEN";
+            document.getElementById("demo").style.color = "red";
+            document.getElementById("description").innerHTML = "House Targaryen of Dragonstone is a noble family of Valyrian descent who once ruled the Seven Kingdoms of Westeros. The Targaryen sigil is a three-headed dragon breathing flames, red on black. The house words are Fire and Blood."
+            document.getElementById("description").style.color = "red";
+            document.getElementById("description").style.backgroundColor = "black";
+            
+        }
+    </script>
+    <div id='buttons'>
+        <button type="button" onclick="Stark()">STARK</button> 
+        <button type="button" onclick="Lannister()">LANNISTER</button>    
+        <button type="button" onclick="Baratheon()">BARATHEON</button>   
+        <button type="button" onclick="Targaryen()">TARGARYEN</button>
+    </div>
+    <h2 id="demo">HOUSES</h2> 
+    <div>
+        <img id="Houses" src="images/GreatHouses.jpg" style="width:400px; height: 300px;">
+    </div>
+    <p id="description" onclick="myFunction()">Great Houses are the most powerful members of nobility of the Seven Kingdoms,
+     often being former royalty and now sworn directly to the Iron Throne.
+    The Lineages and Histories of the Great Houses of the Seven Kingdoms describes the great Houses and high lords of Westeros.
+    </p>
+</body>
+</html>
